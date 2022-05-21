@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.dao.SuppliesYonghuDao">
+
+    <resultMap type="com.entity.SuppliesUonghuEntity" id="ResultMap">
+        <result property="id" column="id"/>
+        <result property="suppliesId" column="supplies_id"/>
+        <result property="yonghuId" column="yonghu_id"/>
+        <result property="subscribeCount" column="subscribe_count"/>
+
+        <result property="createTime" column="create_time"/>
+    </resultMap>
+
+    <resultMap type="com.entity.vo.SuppliesYonghuVo" id="SuppliesResultMap">
+        <result property="id" column="id"/>
+        <result property="suppliesId" column="supplies_id"/>
+        <result property="yonghuId" column="yonghu_id"/>
+        <result property="subscribeCount" column="subscribe_count"/>
+        <result property="yonghuming" column="yonghuming"/>
+
+        <result property="createTime" column="create_time"/>
+    </resultMap>
+
+    <select id="selectListView" resultMap="ResultMap">
+
+        SELECT  * FROM supplies_yonghu
+        <where> 1=1 ${ew.sqlSegment}</where>
+    </select>
+
+    <select id="selectSuppliesYongView"  resultType="com.entity.vo.SuppliesYonghuVo">
+
+        SELECT  apply.*, supplies.name, supplies.img, yonghu.yonghuming
+        FROM supplies_yonghu apply, supplies, yonghu
+        <where>
+         1=1 and apply.supplies_id = supplies.id and apply.yonghu_id = yonghu.id
+         ${ew.sqlSegment}
+         </where>
+    </select>
+
+</mapper>
