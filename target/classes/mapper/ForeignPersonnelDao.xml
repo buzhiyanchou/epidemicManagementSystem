@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.dao.ForeignPersonnelDao">
+
+    <resultMap type="com.entity.ForeignPersonnelEntity" id="ResultMap">
+        <result property="id" column="id"/>
+        <result property="name" column="name"/>
+        <result property="healthImg" column="health_img"/>
+        <result property="phone" column="phone"/>
+        <result property="remark" column="remark"/>
+        <result property="startTime" column="start_time"/>
+        <result property="endTime" column="end_time"/>
+    </resultMap>
+
+    <select id="selectListView" resultMap="ResultMap">
+
+        SELECT  * FROM foreign_personnel
+        <where> 1=1 ${ew.sqlSegment}</where>
+    </select>
+
+</mapper>

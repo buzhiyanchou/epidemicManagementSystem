@@ -1,2 +1,2 @@
-./front/admit/dist/
-./front/admit/node_modules/
+./src/main/webapp/admin/dist
+./src/main/webapp/admin/node_modules

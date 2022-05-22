@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="68992403-76ee-45c9-83f7-52e2b571deb6" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/admin/node_modules/clone/clone.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/admin/node_modules/node-releases/.idea/node-releases.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/admin/node_modules/quill/node_modules/clone/clone.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/admin/node_modules/svg-baker/node_modules/clone/clone.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/epidemicManagementSystem.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/1-install.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/2-run.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/3-build.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/babel.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/public/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/App.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/assets/css/canvas-bg-1.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/assets/css/canvas-bg-2.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/assets/css/canvas-bg-3.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/assets/css/element-variables.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/assets/css/style.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/assets/img/404.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/assets/img/avator.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/assets/img/bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/assets/img/captcha.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/assets/img/login.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/assets/img/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/assets/img/password.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/assets/img/role.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/assets/img/test/jianshe.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/assets/img/test/jiaotong.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/assets/img/test/nongye.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/assets/img/test/weixin.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/assets/img/test/zhifubao.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/assets/img/test/zhongguo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/assets/img/username.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/assets/js/canvas-bg-1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/assets/js/canvas-bg-2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/assets/js/canvas-bg-3.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/assets/js/canvas-bg-4.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/assets/js/canvas-bg-5.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/components/SvgIcon/index.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/components/common/BreadCrumbs.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/components/common/BreadCrumbs.vue.bak" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/components/common/Editor.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/components/common/ExcelFileUpload.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/components/common/FileUpload.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/components/home/HomeCard.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/components/home/HomeChart.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/components/home/HomeComment.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/components/home/HomeProgress.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/components/index/IndexAside.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/components/index/IndexAsideStatic.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/components/index/IndexAsideStatic.vue.bak" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/components/index/IndexAsideSub.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/components/index/IndexHeader.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/components/index/IndexHeader.vue.bak" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/components/index/IndexMain.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/components/index/IndexMain.vue.bak" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/icons/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/icons/svg/404.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/icons/svg/articleEdit.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/icons/svg/banner.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/icons/svg/bug.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/icons/svg/build.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/icons/svg/cfg.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/icons/svg/channel.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/icons/svg/chart.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/icons/svg/clipboard.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/icons/svg/code.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/icons/svg/component.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/icons/svg/contacts.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/icons/svg/dashboard.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/icons/svg/date.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/icons/svg/dept.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/icons/svg/dict.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/icons/svg/documentation.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/icons/svg/download.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/icons/svg/drag.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/icons/svg/druid.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/icons/svg/edit.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/icons/svg/education.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/icons/svg/email.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/icons/svg/excel.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/icons/svg/exit-fullscreen.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/icons/svg/eye-open.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/icons/svg/file.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/icons/svg/form.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/icons/svg/fullscreen.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/icons/svg/icon.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/icons/svg/international.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/icons/svg/job.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/icons/svg/language.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/icons/svg/link.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/icons/svg/list.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/icons/svg/lock.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/icons/svg/log.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/icons/svg/logininfor.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/icons/svg/menu.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/icons/svg/message.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/icons/svg/money.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/icons/svg/monitor.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/icons/svg/nested.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/icons/svg/nested0.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/icons/svg/online.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/icons/svg/operation.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/icons/svg/password.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/icons/svg/password0.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/icons/svg/pdf.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/icons/svg/people.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/icons/svg/peoples.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/icons/svg/phone.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/icons/svg/post.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/icons/svg/qq.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/icons/svg/search.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/icons/svg/sender.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/icons/svg/server.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/icons/svg/shopping.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/icons/svg/shoppingCard.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/icons/svg/size.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/icons/svg/skill.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/icons/svg/star.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/icons/svg/svg/AI.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/icons/svg/svg/AIDeviceLayout.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/icons/svg/svg/EIM.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/icons/svg/svg/VIP.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/icons/svg/svg/agricultureRegister.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/icons/svg/svg/area.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/icons/svg/svg/base.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/icons/svg/svg/batch.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/icons/svg/svg/board.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/icons/svg/svg/board1.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/icons/svg/svg/boardConfig.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/icons/svg/svg/cfg.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/icons/svg/svg/code.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/icons/svg/svg/company.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/icons/svg/svg/crop.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/icons/svg/svg/crops.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/icons/svg/svg/dashboard.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/icons/svg/svg/dataAbnormal.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/icons/svg/svg/dataLack.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/icons/svg/svg/dept.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/icons/svg/svg/device.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/icons/svg/svg/deviceMonitorData.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/icons/svg/svg/dict.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/icons/svg/svg/diseasesinsect.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/icons/svg/svg/diseasesinsects.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/icons/svg/svg/documentation.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/icons/svg/svg/email.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/icons/svg/svg/environmental.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/icons/svg/svg/eye-open.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/icons/svg/svg/farmingProject.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/icons/svg/svg/finance.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/icons/svg/svg/financeBudget.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/icons/svg/svg/financeReality.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/icons/svg/svg/firm.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/icons/svg/svg/firms.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/icons/svg/svg/harvestBatch.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/icons/svg/svg/harvestDetection.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/icons/svg/svg/harvestManage.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/icons/svg/svg/harvestWorks.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/icons/svg/svg/heavyMetalDetection.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/icons/svg/svg/home.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/icons/svg/svg/inspection.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/icons/svg/svg/internet.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/icons/svg/svg/internetActive.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/icons/svg/svg/log.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/icons/svg/svg/mainSystem.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/icons/svg/svg/mainSystemActive.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/icons/svg/svg/menu.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/icons/svg/svg/monitorEquipment.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/icons/svg/svg/news.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/icons/svg/svg/order.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/icons/svg/svg/password.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/icons/svg/svg/peoples.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/icons/svg/svg/pest.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/icons/svg/svg/pestActive.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/icons/svg/svg/pesticideResidue.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/icons/svg/svg/pests.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/icons/svg/svg/phone.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/icons/svg/svg/plant.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/icons/svg/svg/plants.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/icons/svg/svg/plantsActive.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/icons/svg/svg/residual.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/icons/svg/svg/retroactiveCoding.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/icons/svg/svg/scheme.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/icons/svg/svg/source.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/icons/svg/svg/sourceActive.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/icons/svg/svg/system.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/icons/svg/svg/task.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/icons/svg/svg/tempFarm.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/icons/svg/svg/traceability.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/icons/svg/svg/traceabilityList.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/icons/svg/svg/traceabilityStyle.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/icons/svg/svg/user.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/icons/svg/svg/user0.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/icons/svg/svg/validCode.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/icons/svg/svg/video.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/icons/svg/svg/videoEquipment.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/icons/svg/svg/videoKey.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/icons/svg/svg/vipCustomized.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/icons/svg/svg/warnings.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/icons/svg/svg/workOrder.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/icons/svg/svg/┐┤░х╣▄└э.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/icons/svg/svg/╓╪╜Ё╩Ї╝ь▓т╣▄└э.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/icons/svg/swagger.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/icons/svg/system.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/icons/svg/tab.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/icons/svg/table.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/icons/svg/table0.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/icons/svg/task.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/icons/svg/template.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/icons/svg/theme.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/icons/svg/tool.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/icons/svg/tree-table.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/icons/svg/tree.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/icons/svg/user.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/icons/svg/user0.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/icons/svg/validCode.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/icons/svg/wechat.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/icons/svg/zip.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/icons/svgo.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/router/router-static.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/store/store.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/utils/api.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/utils/base.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/utils/http.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/utils/i18n.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/utils/menu.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/utils/storage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/utils/utils.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/utils/validate.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/views/404.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/views/center.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/views/home.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/views/index.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/views/login.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/views/modules/admin/add-or-update.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/views/modules/admin/list.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/views/modules/area/floor-expand.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/views/modules/area/list.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/views/modules/area/room-expand.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/views/modules/churuxinxi/add-or-update.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/views/modules/churuxinxi/list.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/views/modules/config/add-or-update.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/views/modules/config/list.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/views/modules/foreign/list.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/views/modules/forum/add-or-update.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/views/modules/forum/list.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/views/modules/goods/goods-llist.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/views/modules/goods/goods-type.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/views/modules/goods/list.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/views/modules/jiankangxinxi/add-or-update.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/views/modules/jiankangxinxi/list.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/views/modules/location/list.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/views/modules/materials/list.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/views/modules/materials/materials-apply.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/views/modules/news/add-or-update.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/views/modules/news/list.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/views/modules/order/order.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/views/modules/users/add-or-update.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/views/modules/users/list.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/views/modules/yiqingshangbao/add-or-update.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/views/modules/yiqingshangbao/list.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/views/modules/yonghu/add-or-update.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/views/modules/yonghu/list.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/views/pay.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/views/register.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/views/update-password.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/src/views/update-password.vue.bak" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/admit/vue.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/src/components/index/IndexAsideStatic.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/src/components/index/IndexAsideStatic.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/src/components/index/IndexMain.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/src/components/index/IndexMain.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/src/utils/http.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/src/utils/http.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/src/views/home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/src/views/home.vue" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="2" />
+  </component>
+  <component name="ProjectId" id="29WMOLO96AEnknLhjBUDK5zPVLc" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="E:/tomcat/apache-tomcat-9.0.63" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Unnamed" type="com.poratu.idea.plugins.tomcat" factoryName="SMART_TOMCAT_FACTORY" nameIsGenerated="true">
+      <option name="adminPort" value="8005" />
+      <option name="contextPath" value="/" />
+      <option name="docBase" value="$PROJECT_DIR$/src/main/webapp" />
+      <option name="envOptions">
+        <map />
+      </option>
+      <option name="passParentEnvironmentVariables" value="true" />
+      <option name="port" value="8080" />
+      <option name="tomcatInfo">
+        <TomcatInfo>
+          <option name="name" value="Apache Tomcat/9.0.63" />
+          <option name="number" value="0" />
+          <option name="path" value="E:\tomcat\apache-tomcat-9.0.63" />
+          <option name="version" value="9.0.63.0" />
+        </TomcatInfo>
+      </option>
+      <option name="vmOptions" value="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="com.poratu.idea.plugins.tomcat" factoryName="SMART_TOMCAT_FACTORY">
+      <option name="adminPort" value="8005" />
+      <option name="contextPath" />
+      <option name="docBase" />
+      <option name="envOptions" />
+      <option name="passParentEnvironmentVariables" value="true" />
+      <option name="port" value="8080" />
+      <option name="tomcatInfo" />
+      <option name="vmOptions" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="68992403-76ee-45c9-83f7-52e2b571deb6" name="Changes" comment="" />
+      <created>1653224379673</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1653224379673</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

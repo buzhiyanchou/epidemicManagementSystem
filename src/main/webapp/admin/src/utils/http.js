@@ -5,7 +5,7 @@ import storage from '@/utils/storage'
 const http = axios.create({
     timeout: 1000 * 86400,
     withCredentials: true,
-    baseURL: 'http://localhost:8080/ssm63nhz',
+    baseURL: 'http://localhost:8080/',
     headers: {
         'Content-Type': 'application/json; charset=utf-8'
     }

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.dao.YongHuAddrDao">
+
+    <resultMap type="com.entity.YongHuAddrEntity" id="ResultMap">
+        <result property="id" column="id"/>
+        <result property="yonghuId" column="yonghu_id"/>
+        <result property="areaId" column="area_id"/>
+        <result property="floorId" column="floor_id"/>
+        <result property="roomId" column="room_id"/>
+    </resultMap>
+
+    <select id="selectListView" resultMap="ResultMap">
+
+        SELECT  * FROM yonghu_addr
+        <where>
+            1=1 ${ew.sqlSegment}
+
+        </where>
+    </select>
+
+    <select id="getYonAddrByYongId" resultType="string">
+        SELECT CONCAT(area.area_name, ' ', floor.floor_num, ' ', room.room_num)
+        FROM yonghu_addr addr, area, floor, room
+        WHERE addr.area_id = area.id and addr.floor_id = floor.id and addr.room_id = room.id and addr.yonghu_id = #{yonghuId}
+    </select>
+
+    <delete id="removeByYongHuIds" parameterType="string">
+        delete from yonghu_addr where  yonghu_id in
+        <foreach collection="list" item="ids" open="(" separator="," close=")">
+            #{ids}
+        </foreach>
+    </delete>
+</mapper>
