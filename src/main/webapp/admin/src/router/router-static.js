@@ -23,6 +23,8 @@ import area from '@/views/modules/area/list'
 import materials from '@/views/modules/materials/list'
 import goods from '@/views/modules/goods/list'
 import foreign from '@/views/modules//foreign/list'
+import epidemic from '@/views/modules/epidemic/list'
+import statistical from '@/views/modules/epidemic/index'
 
 //2.配置路由   注意：名字
 const routes = [
@@ -110,6 +112,16 @@ const routes = [
         path: '/foreign',
         name: '人员报备',
         component: foreign
+      },
+      {
+        path: '/epidemic',
+        name: '社区疫情统计',
+        component: epidemic
+      },
+      {
+        path: '/statistical',
+        name: '社区疫情记录',
+        component: statistical
       }
     ],
   },

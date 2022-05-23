@@ -18,6 +18,5 @@ import java.util.List;
 public interface GoodsDao extends BaseMapper<GoodsEntity> {
     List<GoodsEntity> selectListView(@Param("ew") Wrapper<GoodsEntity> wrapper);
     List<GoodsEntity> selectListView(Pagination page, @Param("ew") Wrapper<GoodsEntity> wrapper);
-
     List<GoodsEntity> getHasGoodsListByTypeId(String typeId);
 }

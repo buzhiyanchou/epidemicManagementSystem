@@ -12,7 +12,9 @@
         <result property="touxiang" column="touxiang"/>
         <result property="shouji" column="shouji"/>
         <result property="zhuzhi" column="zhuzhi"/>
-    </resultMap>
+		<result property="status" column="status"/>
+		<result property="back_status" column="back_status"/>
+	</resultMap>
 
 	<select id="selectListVO"
 		resultType="com.entity.vo.YonghuVO" >
