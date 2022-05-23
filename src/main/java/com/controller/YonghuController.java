@@ -230,6 +230,9 @@ public class YonghuController {
     public R update(@RequestBody YonghuEntity yonghu, HttpServletRequest request){
         //ValidatorUtils.validateEntity(yonghu);
         yonghuService.updateById(yonghu);//全部更新
+
+		// TODO: 2022/5/24 yonghu 中的 status 不等于 0（正常）时同步更新 log （疫情记录）
+	
         return R.ok();
     }
 

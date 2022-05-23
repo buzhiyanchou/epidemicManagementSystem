@@ -213,7 +213,17 @@
             </el-option>
           </el-select>
         </el-form-item> 
+        
       </el-row>
+      <el-form-item label="健康状态">
+          <el-select v-model="ruleForm.status" placeholder="请选择" clearable>
+            <el-option label="全部" :value="-1"></el-option>
+            <el-option label="正常" :value="0"></el-option>
+            <el-option label="确诊" :value="1"></el-option>
+            <el-option label="无症状" :value="2"></el-option>
+          </el-select>
+        </el-form-item>
+        <br/>
       <el-form-item class="btn">
         <el-button
           v-if="type != 'info'"
@@ -395,6 +405,7 @@ export default {
         touxiang: false,
         shouji: false,
         zhuzhi: false,
+        status:false
       },
       ruleForm: {
         yonghuming: "",
@@ -404,6 +415,7 @@ export default {
         touxiang: "",
         shouji: "",
         zhuzhi: "",
+        status: 0,
       },
       xingbieOptions: [],
       rules: {
@@ -426,7 +438,8 @@ export default {
       floorList: [],
       roomId: null,
       roomList: [],
-      yonghuAddrId: null
+      yonghuAddrId: null,
+      status: 0,
     };
   },
   props: ["parent"],
@@ -490,6 +503,11 @@ export default {
           if (o == "zhuzhi") {
             this.ruleForm.zhuzhi = obj[o];
             this.ro.zhuzhi = true;
+            continue;
+          }
+           if (o == "status") {
+            this.ruleForm.status = obj[o];
+            this.ro.status = true;
             continue;
           }
         }

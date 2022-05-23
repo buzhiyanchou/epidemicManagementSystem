@@ -1,309 +1,171 @@
 <template>
   <div>
     <el-row class="slt">
-      <el-col :span="24" v-for="item,index in text" :style="{background: colors[index] }" :key="index" class="item">
-        <h1>{{count[index]}}</h1>
-        {{item}}
+      <el-col :span="24" v-for="item, index in text" :style="{ background: colors[index] }" :key="index" class="item">
+        <h1>{{ count[index] }}</h1>
+        {{ item }}
       </el-col>
-      
+
     </el-row>
     <!-- 列表页 -->
     <div v-if="showFlag">
       <el-form :inline="true" :model="searchForm" class="form-content">
-        <el-row
-          :gutter="20"
-          class="slt"
-          :style="{
-            justifyContent:
-              contents.searchBoxPosition == '1'
-                ? 'flex-start'
-                : contents.searchBoxPosition == '2'
+        <el-row :gutter="20" class="slt" :style="{
+          justifyContent:
+            contents.searchBoxPosition == '1'
+              ? 'flex-start'
+              : contents.searchBoxPosition == '2'
                 ? 'center'
                 : 'flex-end',
-          }"
-        >
+        }">
           <el-form-item :label="contents.inputTitle == 1 ? '用户名' : ''">
-            <el-input
-              v-if="contents.inputIcon == 1 && contents.inputIconPosition == 1"
-              prefix-icon="el-icon-search"
-              v-model="searchForm.yonghuming"
-              placeholder="用户名"
-              clearable
-            ></el-input>
-            <el-input
-              v-if="contents.inputIcon == 1 && contents.inputIconPosition == 2"
-              suffix-icon="el-icon-search"
-              v-model="searchForm.yonghuming"
-              placeholder="用户名"
-              clearable
-            ></el-input>
-            <el-input
-              v-if="contents.inputIcon == 0"
-              v-model="searchForm.yonghuming"
-              placeholder="用户名"
-              clearable
-            ></el-input>
+            <el-input v-if="contents.inputIcon == 1 && contents.inputIconPosition == 1" prefix-icon="el-icon-search"
+              v-model="searchForm.yonghuming" placeholder="用户名" clearable></el-input>
+            <el-input v-if="contents.inputIcon == 1 && contents.inputIconPosition == 2" suffix-icon="el-icon-search"
+              v-model="searchForm.yonghuming" placeholder="用户名" clearable></el-input>
+            <el-input v-if="contents.inputIcon == 0" v-model="searchForm.yonghuming" placeholder="用户名" clearable>
+            </el-input>
           </el-form-item>
           <el-form-item :label="contents.inputTitle == 1 ? '姓名' : ''">
-            <el-input
-              v-if="contents.inputIcon == 1 && contents.inputIconPosition == 1"
-              prefix-icon="el-icon-search"
-              v-model="searchForm.xingming"
-              placeholder="姓名"
-              clearable
-            ></el-input>
-            <el-input
-              v-if="contents.inputIcon == 1 && contents.inputIconPosition == 2"
-              suffix-icon="el-icon-search"
-              v-model="searchForm.xingming"
-              placeholder="姓名"
-              clearable
-            ></el-input>
-            <el-input
-              v-if="contents.inputIcon == 0"
-              v-model="searchForm.xingming"
-              placeholder="姓名"
-              clearable
-            ></el-input>
+            <el-input v-if="contents.inputIcon == 1 && contents.inputIconPosition == 1" prefix-icon="el-icon-search"
+              v-model="searchForm.xingming" placeholder="姓名" clearable></el-input>
+            <el-input v-if="contents.inputIcon == 1 && contents.inputIconPosition == 2" suffix-icon="el-icon-search"
+              v-model="searchForm.xingming" placeholder="姓名" clearable></el-input>
+            <el-input v-if="contents.inputIcon == 0" v-model="searchForm.xingming" placeholder="姓名" clearable>
+            </el-input>
+          </el-form-item>
+          <el-form-item label="健康状态">
+            <el-select v-model="searchForm.status" placeholder="请选择" clearable>
+              <el-option label="全部" :value="-1"></el-option>
+              <el-option label="正常" :value="0"></el-option>
+              <el-option label="确诊" :value="1"></el-option>
+              <el-option label="无症状" :value="2"></el-option>
+            </el-select>
           </el-form-item>
           <el-form-item>
-            <el-button
-              v-if="
-                contents.searchBtnIcon == 1 &&
-                contents.searchBtnIconPosition == 1
-              "
-              icon="el-icon-search"
-              type="success"
-              @click="search()"
-              >{{ contents.searchBtnFont == 1 ? "查询" : "" }}</el-button
-            >
-            <el-button
-              v-if="
-                contents.searchBtnIcon == 1 &&
-                contents.searchBtnIconPosition == 2
-              "
-              type="success"
-              @click="search()"
-              >{{ contents.searchBtnFont == 1 ? "查询" : ""
-              }}<i class="el-icon-search el-icon--right"
-            /></el-button>
-            <el-button
-              v-if="contents.searchBtnIcon == 0"
-              type="success"
-              @click="search()"
-              >{{ contents.searchBtnFont == 1 ? "查询" : "" }}</el-button
-            >
+            <el-button v-if="
+              contents.searchBtnIcon == 1 &&
+              contents.searchBtnIconPosition == 1
+            " icon="el-icon-search" type="success" @click="search()">{{ contents.searchBtnFont == 1 ? "查询" : "" }}
+            </el-button>
+            <el-button v-if="
+              contents.searchBtnIcon == 1 &&
+              contents.searchBtnIconPosition == 2
+            " type="success" @click="search()">{{ contents.searchBtnFont == 1 ? "查询" : ""
+}}<i class="el-icon-search el-icon--right" /></el-button>
+            <el-button v-if="contents.searchBtnIcon == 0" type="success" @click="search()">{{ contents.searchBtnFont ==
+                1 ? "查询" : ""
+            }}</el-button>
           </el-form-item>
         </el-row>
 
-        
+
       </el-form>
       <div class="table-content">
-        <el-table
-          class="tables"
-          :size="contents.tableSize"
-          :show-header="contents.tableShowHeader"
-          :header-row-style="headerRowStyle"
-          :header-cell-style="headerCellStyle"
-          :border="contents.tableBorder"
-          :fit="contents.tableFit"
-          :stripe="contents.tableStripe"
-          :style="{
+        <el-table class="tables" :size="contents.tableSize" :show-header="contents.tableShowHeader"
+          :header-row-style="headerRowStyle" :header-cell-style="headerCellStyle" :border="contents.tableBorder"
+          :fit="contents.tableFit" :stripe="contents.tableStripe" :style="{
             width: '100%',
             fontSize: contents.tableContentFontSize,
             color: contents.tableContentFontColor,
-          }"
-          v-if="isAuth('yonghu', '查看')"
-          :data="dataList"
-          v-loading="dataListLoading"
-          @selection-change="selectionChangeHandler"
-        >
-         <el-table-column
-            v-if="contents.tableSelection"
-            type="selection"
-            :header-align="contents.tableAlign"
-            align="center"
-            width="50"
-          >
+          }" v-if="isAuth('yonghu', '查看')" :data="dataList" v-loading="dataListLoading"
+          @selection-change="selectionChangeHandler">
+          <el-table-column v-if="contents.tableSelection" type="selection" :header-align="contents.tableAlign"
+            align="center" width="50">
           </el-table-column>
-          <el-table-column
-            label="索引"
-            :align="contents.tableAlign"
-            v-if="contents.tableIndex"
-            type="index"
-            width="50"
-          />
-          <el-table-column
-            :sortable="contents.tableSortable"
-            :align="contents.tableAlign"
-            prop="yonghuming"
-            :header-align="contents.tableAlign"
-            label="用户名"
-          >
+          <el-table-column label="索引" :align="contents.tableAlign" v-if="contents.tableIndex" type="index" width="50" />
+          <el-table-column :sortable="contents.tableSortable" :align="contents.tableAlign" prop="yonghuming"
+            :header-align="contents.tableAlign" label="用户名">
             <template slot-scope="scope">
               {{ scope.row.yonghuming }}
             </template>
           </el-table-column>
-          <el-table-column
-            :sortable="contents.tableSortable"
-            :align="contents.tableAlign"
-            prop="xingming"
-            :header-align="contents.tableAlign"
-            label="姓名"
-          >
+          <el-table-column :sortable="contents.tableSortable" :align="contents.tableAlign" prop="xingming"
+            :header-align="contents.tableAlign" label="姓名">
             <template slot-scope="scope">
               {{ scope.row.xingming }}
             </template>
           </el-table-column>
-          <el-table-column
-            :sortable="contents.tableSortable"
-            :align="contents.tableAlign"
-            prop="xingbie"
-            :header-align="contents.tableAlign"
-            label="性别"
-          >
+          <el-table-column :sortable="contents.tableSortable" :align="contents.tableAlign" prop="xingbie"
+            :header-align="contents.tableAlign" label="性别">
             <template slot-scope="scope">
               {{ scope.row.xingbie }}
             </template>
           </el-table-column>
-          
-          <el-table-column
-            :sortable="contents.tableSortable"
-            :align="contents.tableAlign"
-            prop="shouji"
-            :header-align="contents.tableAlign"
-            label="手机"
-          >
+
+          <el-table-column :sortable="contents.tableSortable" :align="contents.tableAlign" prop="shouji"
+            :header-align="contents.tableAlign" label="手机">
             <template slot-scope="scope">
               {{ scope.row.shouji }}
             </template>
           </el-table-column>
-          <el-table-column
-            :sortable="contents.tableSortable"
-            :align="contents.tableAlign"
-            prop="zhuzhi"
-            :header-align="contents.tableAlign"
-            label="住址"
-          >
+          <el-table-column :sortable="contents.tableSortable" :align="contents.tableAlign" prop="zhuzhi"
+            :header-align="contents.tableAlign" label="住址">
             <template slot-scope="scope">
               <!-- {{ scope.row.zhuzhi }} -->
-              {{getYongAddrStr(scope.row)}}
+              {{ getYongAddrStr(scope.row) }}
             </template>
           </el-table-column>
-           <el-table-column
-            :sortable="contents.tableSortable"
-            :align="contents.tableAlign"
-            prop="zhuzhi"
-            :header-align="contents.tableAlign"
-            label="状态"
-          >
+          <el-table-column :sortable="contents.tableSortable" :align="contents.tableAlign" prop="zhuzhi"
+            :header-align="contents.tableAlign" label="状态">
             <template slot-scope="scope">
               <!-- {{ scope.row.zhuzhi }} -->
               <!-- {{getYongAddrStr(scope.row)}} -->
-              正常
+              {{ scope.row.status === 0 ? '正常' : scope.row.status === 1 ? '确诊' : scope.row.status === 2 ? '无症状' : '' }}
             </template>
           </el-table-column>
-          <el-table-column
-            width="300"
-            :align="contents.tableAlign"
-            :header-align="contents.tableAlign"
-            label="操作"
-          >
+          <el-table-column width="300" :align="contents.tableAlign" :header-align="contents.tableAlign" label="操作">
             <template slot-scope="scope">
-              <el-button
-                v-if="
-                  isAuth('yonghu', '查看') &&
-                  contents.tableBtnIcon == 1 &&
-                  contents.tableBtnIconPosition == 1
-                "
-                type="success"
-                icon="el-icon-tickets"
-                size="mini"
-                @click="addOrUpdateHandler(scope.row.id, 'info')"
-                >{{ contents.tableBtnFont == 1 ? "详情" : "" }}</el-button
-              >
-              <el-button
-                v-if="
-                  isAuth('yonghu', '查看') &&
-                  contents.tableBtnIcon == 1 &&
-                  contents.tableBtnIconPosition == 2
-                "
-                type="success"
-                size="mini"
-                @click="addOrUpdateHandler(scope.row.id, 'info')"
-                >{{ contents.tableBtnFont == 1 ? "详情" : ""
-                }}<i class="el-icon-tickets el-icon--right"
-              /></el-button>
-              <el-button
-                v-if="isAuth('yonghu', '查看') && contents.tableBtnIcon == 0"
-                type="success"
-                size="mini"
-                @click="addOrUpdateHandler(scope.row.id, 'info')"
-                >{{ contents.tableBtnFont == 1 ? "详情" : "" }}</el-button
-              >
-              <el-button
-                v-if="
-                  isAuth('yonghu', '修改') &&
-                  contents.tableBtnIcon == 1 &&
-                  contents.tableBtnIconPosition == 1
-                "
-                type="primary"
-                icon="el-icon-edit"
-                size="mini"
-                @click="addOrUpdateHandler(scope.row.id)"
-                >{{ contents.tableBtnFont == 1 ? "修改" : "" }}</el-button
-              >
-              <el-button
-                v-if="
-                  isAuth('yonghu', '修改') &&
-                  contents.tableBtnIcon == 1 &&
-                  contents.tableBtnIconPosition == 2
-                "
-                type="primary"
-                size="mini"
-                @click="addOrUpdateHandler(scope.row.id)"
-                >{{ contents.tableBtnFont == 1 ? "修改" : ""
-                }}<i class="el-icon-edit el-icon--right"
-              /></el-button>
-              <el-button
-                v-if="isAuth('yonghu', '修改') && contents.tableBtnIcon == 0"
-                type="primary"
-                size="mini"
-                @click="addOrUpdateHandler(scope.row.id)"
-                >{{ contents.tableBtnFont == 1 ? "修改" : "" }}</el-button
-              >
+              <el-button v-if="
+                isAuth('yonghu', '查看') &&
+                contents.tableBtnIcon == 1 &&
+                contents.tableBtnIconPosition == 1
+              " type="success" icon="el-icon-tickets" size="mini" @click="addOrUpdateHandler(scope.row.id, 'info')">
+                {{ contents.tableBtnFont == 1 ? "详情" : "" }}</el-button>
+              <el-button v-if="
+                isAuth('yonghu', '查看') &&
+                contents.tableBtnIcon == 1 &&
+                contents.tableBtnIconPosition == 2
+              " type="success" size="mini" @click="addOrUpdateHandler(scope.row.id, 'info')">{{ contents.tableBtnFont
+    == 1 ? "详情" : ""
+}}<i class="el-icon-tickets el-icon--right" /></el-button>
+              <el-button v-if="isAuth('yonghu', '查看') && contents.tableBtnIcon == 0" type="success" size="mini"
+                @click="addOrUpdateHandler(scope.row.id, 'info')">{{ contents.tableBtnFont == 1 ? "详情" : "" }}
+              </el-button>
+              <el-button v-if="
+                isAuth('yonghu', '修改') &&
+                contents.tableBtnIcon == 1 &&
+                contents.tableBtnIconPosition == 1
+              " type="primary" icon="el-icon-edit" size="mini" @click="addOrUpdateHandler(scope.row.id)">{{
+    contents.tableBtnFont == 1 ? "修改" : ""
+}}</el-button>
+              <el-button v-if="
+                isAuth('yonghu', '修改') &&
+                contents.tableBtnIcon == 1 &&
+                contents.tableBtnIconPosition == 2
+              " type="primary" size="mini" @click="addOrUpdateHandler(scope.row.id)">{{ contents.tableBtnFont == 1 ?
+    "修改" : ""
+}}<i class="el-icon-edit el-icon--right" /></el-button>
+              <el-button v-if="isAuth('yonghu', '修改') && contents.tableBtnIcon == 0" type="primary" size="mini"
+                @click="addOrUpdateHandler(scope.row.id)">{{ contents.tableBtnFont == 1 ? "修改" : "" }}</el-button>
             </template>
           </el-table-column>
         </el-table>
-        <el-pagination
-          clsss="pages"
-          :layout="layouts"
-          @size-change="sizeChangeHandle"
-          @current-change="currentChangeHandle"
-          :current-page="pageIndex"
-          :page-sizes="[10, 20, 50, 100]"
-          :page-size="Number(contents.pageEachNum)"
-          :total="totalPage"
-          :small="contents.pageStyle"
-          class="pagination-content"
-          :background="contents.pageBtnBG"
-          :style="{
+        <el-pagination clsss="pages" :layout="layouts" @size-change="sizeChangeHandle"
+          @current-change="currentChangeHandle" :current-page="pageIndex" :page-sizes="[10, 20, 50, 100]"
+          :page-size="Number(contents.pageEachNum)" :total="totalPage" :small="contents.pageStyle"
+          class="pagination-content" :background="contents.pageBtnBG" :style="{
             textAlign:
               contents.pagePosition == 1
                 ? 'left'
                 : contents.pagePosition == 2
-                ? 'center'
-                : 'right',
-          }"
-        ></el-pagination>
+                  ? 'center'
+                  : 'right',
+          }"></el-pagination>
       </div>
     </div>
     <!-- 添加/修改页面  将父组件的search方法传递给子组件-->
-    <add-or-update
-      v-if="addOrUpdateFlag"
-      :parent="this"
-      ref="addOrUpdate"
-    ></add-or-update>
+    <add-or-update v-if="addOrUpdateFlag" :parent="this" ref="addOrUpdate"></add-or-update>
   </div>
 </template>
 
@@ -311,8 +173,8 @@
 import axios from "axios";
 import AddOrUpdate from "./add-or-update";
 export default {
-  data(){
-    return{
+  data() {
+    return {
       count: [
         1300,
         300,
@@ -323,7 +185,7 @@ export default {
         10,
         10
       ],
-      text:[
+      text: [
         '现已确诊',
         '现有无症状感染者',
         '现已隔离',
@@ -333,7 +195,7 @@ export default {
         '今日新增无症状感染者',
         '今日新增隔离'
       ],
-      colors:[
+      colors: [
         "#fff",
         "#aae67c",
         "#dfe663",
@@ -351,41 +213,41 @@ export default {
           time2: "2019-03-01",
           time3: "2019-05-03",
           time4: "2019-10-01",
-          remark : "这是备注",
+          remark: "这是备注",
           status: "治愈"
         },
-         {
+        {
           id: 1,
           name: "李四",
           time1: "2019-01-01",
           time2: "2019-03-01",
           time3: "2019-05-03",
           time4: "2019-10-01",
-          remark : "这是备注",
+          remark: "这是备注",
           status: "治愈"
         },
-         {
+        {
           id: 1,
           name: "王五",
           time1: "2019-01-01",
           time2: "2019-03-01",
           time3: "2019-05-03",
           time4: "2019-10-01",
-          remark : "这是备注",
+          remark: "这是备注",
           status: "治愈"
         },
-         {
+        {
           id: 1,
           name: "李欣芸",
           time1: "2019-01-01",
           time2: "2019-03-01",
           time3: "2019-05-03",
           time4: "2019-10-01",
-          remark : "这是备注",
+          remark: "这是备注",
           status: "治愈"
         }
       ],
-       searchForm: {
+      searchForm: {
         key: "",
       },
       form: {},
@@ -516,7 +378,7 @@ export default {
     this.getDataList();
     this.contentStyleChange();
   },
-  mounted() {},
+  mounted() { },
   filters: {
     htmlfilter: function (val) {
       return val.replace(/<[^>]*>/g).replace(/undefined/g, "");
@@ -718,7 +580,7 @@ export default {
       this.contents.pageEachNum = 10;
     },
 
-    init() {},
+    init() { },
     search() {
       this.pageIndex = 1;
       this.getDataList();
@@ -744,6 +606,10 @@ export default {
       ) {
         params["xingming"] = "%" + this.searchForm.xingming + "%";
       }
+      if(this.searchForm.status !== -1){
+        params["status"] = this.searchForm.status;
+      }
+
       this.$http({
         url: "yonghu/page",
         method: "get",
@@ -797,8 +663,8 @@ export default {
       var ids = id
         ? [Number(id)]
         : this.dataListSelections.map((item) => {
-            return Number(item.id);
-          });
+          return Number(item.id);
+        });
       this.$confirm(`确定进行[${id ? "删除" : "批量删除"}]操作?`, "提示", {
         confirmButtonText: "确定",
         cancelButtonText: "取消",
@@ -832,12 +698,12 @@ export default {
     },
     getYongAddrStr(row) {
       this.$http({
-        url: '/addr/str/'+row.id,
+        url: '/addr/str/' + row.id,
         method: 'get'
-      }).then(({data:res})=>{
-        row.zhuzhi = res.data?res.data:row.zhuzhi
+      }).then(({ data: res }) => {
+        row.zhuzhi = res.data ? res.data : row.zhuzhi
       })
-        return row.zhuzhi
+      return row.zhuzhi
       // console.log(addrStr)
       // return addrStr
     },
@@ -869,22 +735,22 @@ export default {
   margin: 0;
 }
 
- .item {
-    text-align: center;
-    color: rgba(12, 107, 92, 1);
-    font-size: 14px;
-    width: 350px;
-    border-width: 3px;
-    border-style: dashed;
-    border-color: rgba(12, 107, 92, 1);
-    border-radius: 0px;
-    padding: 30px 0px;
-    // background-color: #fff;
-    margin: 10px 15px;
-    h1{
-      font-size: 42px;
-    }
-  }
+.item {
+  text-align: center;
+  color: rgba(12, 107, 92, 1);
+  font-size: 14px;
+  width: 350px;
+  border-width: 3px;
+  border-style: dashed;
+  border-color: rgba(12, 107, 92, 1);
+  border-radius: 0px;
+  padding: 30px 0px;
+  // background-color: #fff;
+  margin: 10px 15px;
 
+  h1 {
+    font-size: 42px;
+  }
+}
 </style>
 

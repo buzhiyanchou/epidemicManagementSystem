@@ -43,6 +43,4 @@
 		SELECT * FROM yonghu  yonghu <where> 1=1 ${ew.sqlSegment}</where>
 	</select>
 
-
-
 </mapper>

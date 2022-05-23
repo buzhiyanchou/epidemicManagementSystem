@@ -22,7 +22,6 @@
 		FROM yonghu  yonghu,
         <where>
          	1=1 ${ew.sqlSegment}
-
 		</where>
 	</select>
 
@@ -43,7 +42,5 @@
 		resultType="com.entity.view.YonghuView" >
 		SELECT * FROM yonghu  yonghu <where> 1=1 ${ew.sqlSegment}</where>
 	</select>
-
-
 
 </mapper>
