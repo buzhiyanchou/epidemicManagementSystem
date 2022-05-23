@@ -6,6 +6,7 @@
 	<!-- 可根据自己的需求，是否要使用 -->
     <resultMap type="com.entity.YonghuEntity" id="yonghuMap">
         <result property="yonghuming" column="yonghuming"/>
+		<result property="id" column="id"/>
         <result property="mima" column="mima"/>
         <result property="xingming" column="xingming"/>
         <result property="xingbie" column="xingbie"/>
@@ -23,6 +24,12 @@
         <where>
          	1=1 ${ew.sqlSegment}
 		</where>
+	</select>
+
+	<select id="selectAll"
+			resultType="com.entity.vo.YonghuVO" >
+		SELECT *
+		FROM yonghu
 	</select>
 
 	<select id="selectVO"

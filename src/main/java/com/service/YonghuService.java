@@ -23,7 +23,7 @@ public interface YonghuService extends IService<YonghuEntity> {
     PageUtils queryPage(Map<String, Object> params);
     
    	List<YonghuVO> selectListVO(Wrapper<YonghuEntity> wrapper);
-   	
+	List<YonghuVO> selectAll();
    	YonghuVO selectVO(@Param("ew") Wrapper<YonghuEntity> wrapper);
    	
    	List<YonghuView> selectListView(Wrapper<YonghuEntity> wrapper);

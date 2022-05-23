@@ -16,5 +16,7 @@ import java.util.Map;
 
 public interface EpidemicService extends IService<EpidemicLog> {
 
-    PageUtils queryPage(Map<String, Object> params);
+    PageUtils queryPage(Map<String, Object> params,Wrapper<ConfigEntity> wrapper);
+
+    Integer selectCountInDay();
 }

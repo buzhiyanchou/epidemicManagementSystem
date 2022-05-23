@@ -5,6 +5,8 @@ import com.entity.YonghuEntity;
 import com.baomidou.mybatisplus.annotations.TableName;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import java.util.Date;
+
+import lombok.Data;
 import org.springframework.format.annotation.DateTimeFormat;
 
 import java.io.Serializable;
@@ -18,6 +20,7 @@ import java.io.Serializable;
  * @email 
  * @date 2022-03-10 14:25:06
  */
+@Data
 public class YonghuVO  implements Serializable {
 	private static final long serialVersionUID = 1L;
 
@@ -27,7 +30,11 @@ public class YonghuVO  implements Serializable {
 	 */
 	
 	private String mima;
-		
+	/**
+	 * id
+	 */
+
+	private Integer id;
 	/**
 	 * 姓名
 	 */

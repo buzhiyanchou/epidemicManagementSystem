@@ -5,39 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="68992403-76ee-45c9-83f7-52e2b571deb6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/controller/EpidemicLogController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/controller/YtongjiController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dao/EpidemicDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/entity/EpidemicLog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/entity/Ytongji.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/service/EpidemicService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/service/impl/EpidemicServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/EpidemicDao.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/controller/YonghuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/controller/YonghuController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/controller/EpidemicLogController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/controller/EpidemicLogController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/controller/YtongjiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/controller/YtongjiController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dao/EpidemicDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dao/EpidemicDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dao/YonghuDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dao/YonghuDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/entity/EpidemicLog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/entity/EpidemicLog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/entity/vo/YonghuVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/entity/vo/YonghuVO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/service/EpidemicService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/service/EpidemicService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/service/YonghuService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/service/YonghuService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/service/impl/EpidemicServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/service/impl/EpidemicServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/service/impl/YonghuServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/service/impl/YonghuServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/EpidemicDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/EpidemicDao.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/YonghuDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/YonghuDao.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/node_modules/.cache/babel-loader/197dbfa97249c5af3c32de50f834f7fb.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/node_modules/.cache/babel-loader/197dbfa97249c5af3c32de50f834f7fb.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/node_modules/.cache/babel-loader/4d12cccd9d61c6835473177253dd9edf.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/node_modules/.cache/babel-loader/4d12cccd9d61c6835473177253dd9edf.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/node_modules/.cache/babel-loader/afd4db18b59f2eeb3b3c2bfe480d538e.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/node_modules/.cache/babel-loader/afd4db18b59f2eeb3b3c2bfe480d538e.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/node_modules/.cache/babel-loader/d8ffe887425dc8c122f80853c6035ef7.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/node_modules/.cache/babel-loader/d8ffe887425dc8c122f80853c6035ef7.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/node_modules/.cache/vue-loader/035e8ce779c797cbb4da1c06ab776d00.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/node_modules/.cache/vue-loader/035e8ce779c797cbb4da1c06ab776d00.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/node_modules/.cache/vue-loader/1edf1f79254c4cc1de9565197fa36ff5.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/node_modules/.cache/vue-loader/1edf1f79254c4cc1de9565197fa36ff5.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/node_modules/.cache/vue-loader/21a7a7a214541db3afbd32adcff956ee.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/node_modules/.cache/vue-loader/21a7a7a214541db3afbd32adcff956ee.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/node_modules/.cache/vue-loader/64e6467ae9fd6827b71973ec02cd72de.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/node_modules/.cache/vue-loader/64e6467ae9fd6827b71973ec02cd72de.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/node_modules/.cache/vue-loader/689ad7b818fa5f78df76fe8f5e1a6f24.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/node_modules/.cache/vue-loader/689ad7b818fa5f78df76fe8f5e1a6f24.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/node_modules/.cache/vue-loader/69e3924127353edd056b535bb80ee3b4.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/node_modules/.cache/vue-loader/69e3924127353edd056b535bb80ee3b4.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/node_modules/.cache/vue-loader/9ca14323f25c82cdc8b01a3ff20dc0d0.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/node_modules/.cache/vue-loader/9ca14323f25c82cdc8b01a3ff20dc0d0.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/node_modules/.cache/vue-loader/befa62b0fce9a56a44acec667daaa1c3.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/node_modules/.cache/vue-loader/befa62b0fce9a56a44acec667daaa1c3.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/node_modules/.cache/vue-loader/c655f4b46cbe14b19c5bc5c5ca3182a6.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/node_modules/.cache/vue-loader/c655f4b46cbe14b19c5bc5c5ca3182a6.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/node_modules/.cache/vue-loader/cc85c8c4129b014003a59f57d2ed300d.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/node_modules/.cache/vue-loader/cc85c8c4129b014003a59f57d2ed300d.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/node_modules/.cache/vue-loader/d20a0a62c247bec42b7be564fc0c08c7.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/node_modules/.cache/vue-loader/d20a0a62c247bec42b7be564fc0c08c7.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/node_modules/.cache/vue-loader/e4b18d4d4abcef02d25fc0f6d9023c27.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/node_modules/.cache/vue-loader/e4b18d4d4abcef02d25fc0f6d9023c27.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/node_modules/.cache/vue-loader/f29f9725d0688f184e3a3f404c497ad8.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/node_modules/.cache/vue-loader/f29f9725d0688f184e3a3f404c497ad8.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/node_modules/.cache/vue-loader/f42c9485625b08de79328849b16eb25b.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/node_modules/.cache/vue-loader/f42c9485625b08de79328849b16eb25b.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/src/views/modules/epidemic/add-or-update.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/src/views/modules/epidemic/add-or-update.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/src/views/modules/epidemic/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/src/views/modules/epidemic/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/controller/YonghuController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/controller/YonghuController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapper/YonghuDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/YonghuDao.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,6 +54,9 @@
     <option name="version" value="2" />
   </component>
   <component name="ProjectId" id="29WMOLO96AEnknLhjBUDK5zPVLc" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -84,6 +68,11 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="E:/tomcat/apache-tomcat-9.0.63" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.service.impl" />
+    </key>
   </component>
   <component name="RunManager" selected="Smart Tomcat.Unnamed">
     <configuration name="MPUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
