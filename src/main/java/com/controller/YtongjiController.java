@@ -33,21 +33,21 @@ private EpidemicService epidemicService;
         EntityWrapper<EpidemicLog> ew = new EntityWrapper<>();
         int i = epidemicService.selectCount(ew);
         ytongji.setAllNum(i);
-        //无症状感染人数
-        ytongji.setAllNum();
-        //现已隔离
-        ytongji.setAllNum();
-        //已治愈
-        ytongji.setAllNum();
-        //累计确诊
-        ytongji.setAllNum();
-        //今日新增
-        epidemicService.selectCountInDay()
-        ytongji.setAllNum();
-        //今日新增无症状
-        ytongji.setAllNum();
-        //今日新增隔离
-        ytongji.setAllNum();
+//        //无症状感染人数
+//        ytongji.setAllNum();
+//        //现已隔离
+//        ytongji.setAllNum();
+//        //已治愈
+//        ytongji.setAllNum();
+//        //累计确诊
+//        ytongji.setAllNum();
+//        //今日新增
+//        epidemicService.selectCountInDay()
+//        ytongji.setAllNum();
+//        //今日新增无症状
+//        ytongji.setAllNum();
+//        //今日新增隔离
+//        ytongji.setAllNum();
         // TODO: 2022/5/24 查询返回 Ytongji 对象
 //        return R.ok().put("data", data);
         return R.ok().put("data", ytongji);

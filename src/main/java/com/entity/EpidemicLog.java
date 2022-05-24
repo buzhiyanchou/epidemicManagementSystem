@@ -1,6 +1,7 @@
 package com.entity;
 
 
+import com.baomidou.mybatisplus.annotations.TableField;
 import com.baomidou.mybatisplus.annotations.TableName;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.Data;
@@ -40,6 +41,9 @@ public class EpidemicLog<T> implements Serializable {
 
     private String remark;
 
+    @TableField(exist = false)
+    private String name;
+
     @JsonFormat(locale="zh", timezone="GMT+8", pattern="yyyy-MM-dd HH:mm:ss")
     @DateTimeFormat
     private Date wzzTime;
@@ -52,6 +56,13 @@ public class EpidemicLog<T> implements Serializable {
     @DateTimeFormat
     private Date zyTime;
 
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
 
     public Integer getId() {
         return id;

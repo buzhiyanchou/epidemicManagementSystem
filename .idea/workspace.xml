@@ -4,21 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="68992403-76ee-45c9-83f7-52e2b571deb6" name="Changes" comment="">
+    <list default="true" id="68992403-76ee-45c9-83f7-52e2b571deb6" name="Changes" comment="[jiekou]zhuming">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/controller/EpidemicLogController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/controller/EpidemicLogController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/controller/YtongjiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/controller/YtongjiController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dao/EpidemicDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dao/EpidemicDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dao/YonghuDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dao/YonghuDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/entity/EpidemicLog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/entity/EpidemicLog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/entity/vo/YonghuVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/entity/vo/YonghuVO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/service/EpidemicService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/service/EpidemicService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/service/YonghuService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/service/YonghuService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/service/impl/EpidemicServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/service/impl/EpidemicServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/service/impl/YonghuServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/service/impl/YonghuServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/EpidemicDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/EpidemicDao.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/YonghuDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/YonghuDao.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,6 +58,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="TODO_SCOPE" value="All Places" />
     <property name="last_opened_file_path" value="E:/tomcat/apache-tomcat-9.0.63" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
@@ -92,9 +85,7 @@
       <option name="adminPort" value="8005" />
       <option name="contextPath" value="/" />
       <option name="docBase" value="$PROJECT_DIR$/src/main/webapp" />
-      <option name="envOptions">
-        <map />
-      </option>
+      <option name="envOptions" />
       <option name="passParentEnvironmentVariables" value="true" />
       <option name="port" value="8080" />
       <option name="tomcatInfo">
@@ -124,8 +115,8 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Smart Tomcat.Unnamed" />
       <item itemvalue="Application.MPUtil" />
+      <item itemvalue="Smart Tomcat.Unnamed" />
     </list>
     <recent_temporary>
       <list>
@@ -142,6 +133,14 @@
       <option name="presentableId" value="Default" />
       <updated>1653224379673</updated>
     </task>
+    <task id="LOCAL-00001" summary="[jiekou]zhuming">
+      <created>1653340471429</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1653340471429</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -154,5 +153,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="[jiekou]zhuming" />
+    <option name="LAST_COMMIT_MESSAGE" value="[jiekou]zhuming" />
   </component>
 </project>

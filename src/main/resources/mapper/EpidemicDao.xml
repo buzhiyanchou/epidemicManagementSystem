@@ -4,9 +4,4 @@
 <mapper namespace="com.dao.EpidemicDao">
 
 
-    <select id="selectCountInDay" resultMap="ResultMap">
-
-        SELECT  * FROM floor
-        <where> 1=1 ${ew.sqlSegment}</where>
-    </select>
 </mapper>

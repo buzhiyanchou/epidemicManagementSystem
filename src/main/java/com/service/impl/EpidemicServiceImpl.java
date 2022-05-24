@@ -35,7 +35,7 @@ public class EpidemicServiceImpl extends ServiceImpl<EpidemicDao, EpidemicLog> i
 
     @Override
     public Integer selectCountInDay() {
-        return  epidemicDao.selectCountInDay()
+        return  epidemicDao.selectCountInDay();
     }
 
 

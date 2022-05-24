@@ -49,8 +49,7 @@ public class EpidemicLogController {
 
         List<EpidemicLog> list = (List<EpidemicLog>) page.getList();
         list.forEach(e->{
-          e.set(userMap.get(e.getId()))
-
+          e.setName(userMap.get(e.getId()));
         });
         // TODO: 2022/5/24 获取返回疫情记录表的数据   // 并能实现条件查询     需要将用户表中的 名字以及 status 连表查询返回
         return null;
