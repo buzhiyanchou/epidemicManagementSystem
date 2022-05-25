@@ -128,6 +128,24 @@ const menu = {
               },
             ],
             menu: "人员报备管理",
+          },
+          {
+            child: [
+              {
+                appFrontIcon: "cuIcon-news",
+                buttons: ["新增", "查看", "修改", "删除"],
+                menu: "社区疫情统计",
+                tableName: "statistical",
+              },
+              {
+                appFrontIcon: "cuIcon-news",
+                buttons: ["新增", "查看", "修改", "删除"],
+                menu: "疫情相关记录",
+                tableName: "epidemic",
+              },
+            ],
+            menu: "疫情管理",
+
           }
          
         ],

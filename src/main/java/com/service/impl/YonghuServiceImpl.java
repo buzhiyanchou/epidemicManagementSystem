@@ -43,8 +43,13 @@ public class YonghuServiceImpl extends ServiceImpl<YonghuDao, YonghuEntity> impl
 	public List<YonghuVO> selectListVO(Wrapper<YonghuEntity> wrapper) {
  		return baseMapper.selectListVO(wrapper);
 	}
-	
-	@Override
+
+    @Override
+    public List<YonghuVO> selectAll() {
+		return baseMapper.selectAll();
+    }
+
+    @Override
 	public YonghuVO selectVO(Wrapper<YonghuEntity> wrapper) {
  		return baseMapper.selectVO(wrapper);
 	}

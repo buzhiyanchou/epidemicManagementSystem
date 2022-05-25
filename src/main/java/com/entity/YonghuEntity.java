@@ -98,6 +98,26 @@ public class YonghuEntity<T> implements Serializable {
 	@DateTimeFormat
 	private Date addtime;
 
+	private Integer status;
+
+	private Integer back_status;
+
+	public Integer getStatus() {
+		return status;
+	}
+
+	public void setStatus(Integer status) {
+		this.status = status;
+	}
+
+	public Integer getBack_status() {
+		return back_status;
+	}
+
+	public void setBack_status(Integer back_status) {
+		this.back_status = back_status;
+	}
+
 	public Date getAddtime() {
 		return addtime;
 	}

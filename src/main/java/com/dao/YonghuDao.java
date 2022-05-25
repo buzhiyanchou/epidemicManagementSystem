@@ -30,6 +30,7 @@ public interface YonghuDao extends BaseMapper<YonghuEntity> {
 	List<YonghuView> selectListView(Pagination page,@Param("ew") Wrapper<YonghuEntity> wrapper);
 	
 	YonghuView selectView(@Param("ew") Wrapper<YonghuEntity> wrapper);
-	
 
+
+    List<YonghuVO> selectAll();
 }

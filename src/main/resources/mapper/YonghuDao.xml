@@ -6,13 +6,16 @@
 	<!-- 可根据自己的需求，是否要使用 -->
     <resultMap type="com.entity.YonghuEntity" id="yonghuMap">
         <result property="yonghuming" column="yonghuming"/>
+		<result property="id" column="id"/>
         <result property="mima" column="mima"/>
         <result property="xingming" column="xingming"/>
         <result property="xingbie" column="xingbie"/>
         <result property="touxiang" column="touxiang"/>
         <result property="shouji" column="shouji"/>
         <result property="zhuzhi" column="zhuzhi"/>
-    </resultMap>
+		<result property="status" column="status"/>
+		<result property="back_status" column="back_status"/>
+	</resultMap>
 
 	<select id="selectListVO"
 		resultType="com.entity.vo.YonghuVO" >
@@ -20,8 +23,13 @@
 		FROM yonghu  yonghu,
         <where>
          	1=1 ${ew.sqlSegment}
-
 		</where>
+	</select>
+
+	<select id="selectAll"
+			resultType="com.entity.vo.YonghuVO" >
+		SELECT *
+		FROM yonghu
 	</select>
 
 	<select id="selectVO"
@@ -41,7 +49,5 @@
 		resultType="com.entity.view.YonghuView" >
 		SELECT * FROM yonghu  yonghu <where> 1=1 ${ew.sqlSegment}</where>
 	</select>
-
-
 
 </mapper>
