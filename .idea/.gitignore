@@ -1,2 +1,8 @@
-../../meiTuan_take_out/meiTuan_take_out/.idea
+../../epidemicManagementSystem02/.idea
 target
+/workspace.xml
+/dataSources.local.xml
+# Editor-based HTTP Client requests
+/httpRequests/
+/shelf/
+/workspace.xml
