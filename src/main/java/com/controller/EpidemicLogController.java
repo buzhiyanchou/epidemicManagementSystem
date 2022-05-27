@@ -4,6 +4,7 @@ package com.controller;
 import com.baomidou.mybatisplus.mapper.EntityWrapper;
 import com.entity.EpidemicLog;
 import com.entity.YonghuEntity;
+import com.entity.vo.EpidemicLogVo;
 import com.entity.vo.YonghuVO;
 import com.service.EpidemicService;
 import com.service.YonghuService;
@@ -36,10 +37,9 @@ public class EpidemicLogController {
      * 后端列表
      */
     @RequestMapping("/page")
-    public R page(@RequestParam Map<String, Object> params, EpidemicLog epidemicLog,
-                  HttpServletRequest request){
+    public R page(@RequestParam Integer page,@RequestParam Integer size){
 
-        EntityWrapper<EpidemicLog> ew = new EntityWrapper<EpidemicLog>();
+       /* EntityWrapper<EpidemicLog> ew = new EntityWrapper<EpidemicLog>();
 //        PageUtils page = yonghuService.queryPage(params, MPUtil.sort(MPUtil.between(MPUtil.likeOrEq(ew, epidemicLog), params), params));
         //一直爆红  检查不出来  Fixed 参数类型个数不一致
         PageUtils page = epidemicService.queryPage(params, MPUtil.sort(MPUtil.between(MPUtil.likeOrEq(ew, epidemicLog), params), params));
@@ -50,9 +50,12 @@ public class EpidemicLogController {
         List<EpidemicLog> list = (List<EpidemicLog>) page.getList();
         list.forEach(e->{
           e.setName(userMap.get(e.getId()));
-        });
-        // TODO: 2022/5/24 获取返回疫情记录表的数据   // 并能实现条件查询     需要将用户表中的 名字以及 status 连表查询返回
-        return null;
+        });*/
+        // TODO: 2022/5/24 获取返回疫情记录表的数据
+        // 并能实现条件查询     需要将用户表中的 名字以及 status 连表查询返回
+        List<EpidemicLogVo> logVos = epidemicService.queryPage(page, size);
+
+        return R.ok().put("data",logVos);
     }
 
     /**

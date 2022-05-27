@@ -13,6 +13,7 @@ import java.io.Serializable;
 import java.util.Date;
 import java.util.List;
 
+import lombok.Data;
 import org.springframework.format.annotation.DateTimeFormat;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import org.apache.commons.beanutils.BeanUtils;
@@ -29,27 +30,14 @@ import com.baomidou.mybatisplus.enums.IdType;
  * @date 2022-03-10 14:25:06
  */
 @TableName("yonghu")
-public class YonghuEntity<T> implements Serializable {
+@Data
+public class YonghuEntity implements Serializable {
 	private static final long serialVersionUID = 1L;
 
-
-	public YonghuEntity() {
-		
-	}
-	
-	public YonghuEntity(T t) {
-		try {
-			BeanUtils.copyProperties(this, t);
-		} catch (IllegalAccessException | InvocationTargetException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-	}
-	
 	/**
 	 * 主键id
 	 */
-	@TableId
+	@TableId(value = "id",type = IdType.ID_WORKER)
 	private Long id;
 	/**
 	 * 用户名
@@ -102,119 +90,6 @@ public class YonghuEntity<T> implements Serializable {
 
 	private Integer back_status;
 
-	public Integer getStatus() {
-		return status;
-	}
 
-	public void setStatus(Integer status) {
-		this.status = status;
-	}
-
-	public Integer getBack_status() {
-		return back_status;
-	}
-
-	public void setBack_status(Integer back_status) {
-		this.back_status = back_status;
-	}
-
-	public Date getAddtime() {
-		return addtime;
-	}
-	public void setAddtime(Date addtime) {
-		this.addtime = addtime;
-	}
-
-	public Long getId() {
-		return id;
-	}
-
-	public void setId(Long id) {
-		this.id = id;
-	}
-	/**
-	 * 设置：用户名
-	 */
-	public void setYonghuming(String yonghuming) {
-		this.yonghuming = yonghuming;
-	}
-	/**
-	 * 获取：用户名
-	 */
-	public String getYonghuming() {
-		return yonghuming;
-	}
-	/**
-	 * 设置：密码
-	 */
-	public void setMima(String mima) {
-		this.mima = mima;
-	}
-	/**
-	 * 获取：密码
-	 */
-	public String getMima() {
-		return mima;
-	}
-	/**
-	 * 设置：姓名
-	 */
-	public void setXingming(String xingming) {
-		this.xingming = xingming;
-	}
-	/**
-	 * 获取：姓名
-	 */
-	public String getXingming() {
-		return xingming;
-	}
-	/**
-	 * 设置：性别
-	 */
-	public void setXingbie(String xingbie) {
-		this.xingbie = xingbie;
-	}
-	/**
-	 * 获取：性别
-	 */
-	public String getXingbie() {
-		return xingbie;
-	}
-	/**
-	 * 设置：头像
-	 */
-	public void setTouxiang(String touxiang) {
-		this.touxiang = touxiang;
-	}
-	/**
-	 * 获取：头像
-	 */
-	public String getTouxiang() {
-		return touxiang;
-	}
-	/**
-	 * 设置：手机
-	 */
-	public void setShouji(String shouji) {
-		this.shouji = shouji;
-	}
-	/**
-	 * 获取：手机
-	 */
-	public String getShouji() {
-		return shouji;
-	}
-	/**
-	 * 设置：住址
-	 */
-	public void setZhuzhi(String zhuzhi) {
-		this.zhuzhi = zhuzhi;
-	}
-	/**
-	 * 获取：住址
-	 */
-	public String getZhuzhi() {
-		return zhuzhi;
-	}
 
 }

@@ -12,6 +12,7 @@ import java.util.List;
 import javax.servlet.http.HttpServletRequest;
 import java.io.IOException;
 
+import com.baomidou.mybatisplus.toolkit.IdWorker;
 import com.utils.ValidatorUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -194,14 +195,16 @@ public class YonghuController {
      */
     @RequestMapping("/save")
     public R save(@RequestBody YonghuEntity yonghu, HttpServletRequest request){
-    	yonghu.setId(new Date().getTime()+new Double(Math.floor(Math.random()*1000)).longValue());
-    	//ValidatorUtils.validateEntity(yonghu);
+
+    	// yonghu.setId(new Date().getTime()+new Double(Math.floor(Math.random()*1000)).longValue());
+    	yonghu.setId(IdWorker.getId());
+		//ValidatorUtils.validateEntity(yonghu);
     	YonghuEntity user = yonghuService.selectOne(new EntityWrapper<YonghuEntity>().eq("yonghuming", yonghu.getYonghuming()));
 		if(user!=null) {
 			return R.error("用户已存在");
 		}
 
-		yonghu.setId(new Date().getTime());
+		// yonghu.setId(new Date().getTime());
         yonghuService.insert(yonghu);
         return R.ok().put("data", yonghu);
     }
@@ -211,14 +214,15 @@ public class YonghuController {
      */
     @RequestMapping("/add")
     public R add(@RequestBody YonghuEntity yonghu, HttpServletRequest request){
-    	yonghu.setId(new Date().getTime()+new Double(Math.floor(Math.random()*1000)).longValue());
-    	//ValidatorUtils.validateEntity(yonghu);
+    	// yonghu.setId(new Date().getTime()+new Double(Math.floor(Math.random()*1000)).longValue());
+		yonghu.setId(IdWorker.getId());
+		//ValidatorUtils.validateEntity(yonghu);
     	YonghuEntity user = yonghuService.selectOne(new EntityWrapper<YonghuEntity>().eq("yonghuming", yonghu.getYonghuming()));
 		if(user!=null) {
 			return R.error("用户已存在");
 		}
 
-		yonghu.setId(new Date().getTime());
+		// yonghu.setId(new Date().getTime());
         yonghuService.insert(yonghu);
         return R.ok();
     }
@@ -228,11 +232,10 @@ public class YonghuController {
      */
     @RequestMapping("/update")
     public R update(@RequestBody YonghuEntity yonghu, HttpServletRequest request){
-        //ValidatorUtils.validateEntity(yonghu);
-        yonghuService.updateById(yonghu);//全部更新
-
-		// TODO: 2022/5/24 yonghu 中的 status 不等于 0（正常）时同步更新 log （疫情记录）
-	
+		// TODO:  应该是完成了！！！  2022/5/24 yonghu 中的 status 不等于 0（正常）时同步更新 log （疫情记录）
+		// 判断用户传入状态，如果是0，不进行日志操作，  如果修改状态为1确诊再加入日志中，隔离时，再修改隔离的时间还是同一条数据
+		// 治愈后 也要修改解除隔离的时间
+		yonghuService.updateYonghu(yonghu);
         return R.ok();
     }
 

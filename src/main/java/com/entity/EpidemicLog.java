@@ -2,7 +2,9 @@ package com.entity;
 
 
 import com.baomidou.mybatisplus.annotations.TableField;
+import com.baomidou.mybatisplus.annotations.TableId;
 import com.baomidou.mybatisplus.annotations.TableName;
+import com.baomidou.mybatisplus.enums.IdType;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.Data;
 import lombok.NonNull;
@@ -15,29 +17,20 @@ import java.lang.reflect.InvocationTargetException;
 import java.util.Date;
 
 
-@TableName("epidemicLog")
-public class EpidemicLog<T> implements Serializable {
+@TableName("epidemiclog")
+@Data
+public class EpidemicLog implements Serializable {
 
-    public EpidemicLog() {
 
-    }
-
-    public EpidemicLog(T t) {
-        try {
-            BeanUtils.copyProperties(this, t);
-        } catch (IllegalAccessException | InvocationTargetException e) {
-            e.printStackTrace();
-        }
-    }
-    @Valid
-    @NonNull
-    private Integer id;
+    @TableId(value = "id",type = IdType.ID_WORKER_STR)
+    private String id;
 
     @JsonFormat(locale="zh", timezone="GMT+8", pattern="yyyy-MM-dd HH:mm:ss")
     @DateTimeFormat
     private Date qzTime;
 
-    private Integer userId;
+    @TableField("user_id")
+    private Long userId;
 
     private String remark;
 
@@ -46,77 +39,19 @@ public class EpidemicLog<T> implements Serializable {
 
     @JsonFormat(locale="zh", timezone="GMT+8", pattern="yyyy-MM-dd HH:mm:ss")
     @DateTimeFormat
+    @TableField("wzz_time")
     private Date wzzTime;
 
     @JsonFormat(locale="zh", timezone="GMT+8", pattern="yyyy-MM-dd HH:mm:ss")
     @DateTimeFormat
+    @TableField("gl_time")
     private Date glTime;
 
     @JsonFormat(locale="zh", timezone="GMT+8", pattern="yyyy-MM-dd HH:mm:ss")
     @DateTimeFormat
+    @TableField("zy_time")
     private Date zyTime;
 
-    public String getName() {
-        return name;
-    }
 
-    public void setName(String name) {
-        this.name = name;
-    }
 
-    public Integer getId() {
-        return id;
-    }
-
-    public void setId(Integer id) {
-        this.id = id;
-    }
-
-    public Date getQzTime() {
-        return qzTime;
-    }
-
-    public void setQzTime(Date qzTime) {
-        this.qzTime = qzTime;
-    }
-
-    public Integer getUserId() {
-        return userId;
-    }
-
-    public void setUserId(Integer userId) {
-        this.userId = userId;
-    }
-
-    public String getRemark() {
-        return remark;
-    }
-
-    public void setRemark(String remark) {
-        this.remark = remark;
-    }
-
-    public Date getWzzTime() {
-        return wzzTime;
-    }
-
-    public void setWzzTime(Date wzzTime) {
-        this.wzzTime = wzzTime;
-    }
-
-    public Date getGlTime() {
-        return glTime;
-    }
-
-    public void setGlTime(Date glTime) {
-        this.glTime = glTime;
-    }
-
-    public Date getZyTime() {
-        return zyTime;
-    }
-
-    public void setZyTime(Date zyTime) {
-        this.zyTime = zyTime;
-    }
 }

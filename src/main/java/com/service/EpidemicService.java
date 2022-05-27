@@ -6,8 +6,10 @@ import com.entity.ConfigEntity;
 import com.entity.EpidemicLog;
 import com.entity.YonghuEntity;
 import com.entity.view.YonghuView;
+import com.entity.vo.EpidemicLogVo;
 import com.entity.vo.YonghuVO;
 import com.utils.PageUtils;
+import com.utils.R;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
@@ -19,4 +21,8 @@ public interface EpidemicService extends IService<EpidemicLog> {
     PageUtils queryPage(Map<String, Object> params,Wrapper<ConfigEntity> wrapper);
 
     Integer selectCountInDay();
+
+    EpidemicLog getById(Long id);
+
+    List<EpidemicLogVo> queryPage(Integer page, Integer size);
 }
