@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.dao.EpidemicDao">
+
+    <select id="queryById" resultType="com.entity.EpidemicLog">
+        select * from epidemiclog where user_id = #{id}
+    </select>
+
+    <resultMap id="BaseResultMap" type="com.entity.vo.EpidemicLogVo">
+        <id column="id"  property="id" />
+        <result column="qz_time"  property="qzTime" />
+        <result column="user_id"  property="userId" />
+        <result column="remark"  property="remark" />
+        <result column="wzz_time"  property="wzzTime" />
+        <result column="gl_time"  property="glTime" />
+        <result column="zy_time"  property="zyTime" />
+        <result column="name"  property="name" />
+        <result column="yonghuming"  property="yonghuming" />
+        <result column="status"  property="status" />
+    </resultMap>
+    <select id="queryPage" resultMap="BaseResultMap">
+        select
+            e.id,e.qz_time,e.user_id,e.remark,e.wzz_time,
+             e.gl_time,e.zy_time,e.name,y.yonghuming,y.`status`
+        from epidemiclog e LEFT JOIN yonghu y on
+            e.user_id = y.id
+    </select>
+
+    <select id="selectListView"
+            resultType="com.entity.vo.EpidemicLogVo" >
+
+        SELECT  epidemiclog.* FROM epidemiclog  epidemiclog
+        <where> 1=1 ${ew.sqlSegment}</where>
+    </select>
+
+</mapper>

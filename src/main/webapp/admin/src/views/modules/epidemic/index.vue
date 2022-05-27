@@ -1,9 +1,9 @@
 <template>
   <div>
     <el-row class="slt">
-      <el-col :span="24" v-for="item, index in text" :style="{ background: colors[index] }" :key="index" class="item">
-        <h1>{{ count[index] }}</h1>
-        {{ item }}
+      <el-col :span="24" v-for="item, index in Object.keys(count)" :style="{ background: colors[index] }" :key="index" class="item">
+        <h1>{{ count[item] }}</h1>
+        {{ text[index] }}
       </el-col>
 
     </el-row>
@@ -175,18 +175,18 @@ import AddOrUpdate from "./add-or-update";
 export default {
   data() {
     return {
-      count: [
-        1300,
-        300,
-        200,
-        300,
-        100,
-        80,
-        10,
-        10
-      ],
+      count: {
+        allGlNum : 0,
+        allNum: 6,
+        allQzNum: 0,
+        todayAddNum: 0,
+        todayGlNum: 0,
+        todayWzzNum: 0,
+        wzzNum: 0,
+        zyNum: 0
+      },
       text: [
-        '现已确诊',
+        '小区总人数',
         '现有无症状感染者',
         '现已隔离',
         '现已治愈',
@@ -376,6 +376,7 @@ export default {
   created() {
     this.init();
     this.getDataList();
+    this.gitdataAll();
     this.contentStyleChange();
   },
   mounted() { },
@@ -388,6 +389,23 @@ export default {
     AddOrUpdate,
   },
   methods: {
+    gitdataAll()  {
+      this.$http({
+        url: "ytongji/selectToalTongJi",
+        method: "get",
+      }).then(({ data }) => {
+        console.log(data)
+        this.count = data.data
+        // if (data && data.code === 0) {
+        //   this.dataList = data.data.list;
+        //   this.totalPage = data.data.total;
+        // } else {
+        //   this.dataList = [];
+        //   this.totalPage = 0;
+        // }
+        // this.dataListLoading = false;
+      });
+    },
     contentStyleChange() {
       this.contentSearchStyleChange();
       this.contentBtnAdAllStyleChange();
@@ -606,7 +624,7 @@ export default {
       ) {
         params["xingming"] = "%" + this.searchForm.xingming + "%";
       }
-      if(this.searchForm.status !== -1){
+      if (this.searchForm.status !== -1) {
         params["status"] = this.searchForm.status;
       }
 

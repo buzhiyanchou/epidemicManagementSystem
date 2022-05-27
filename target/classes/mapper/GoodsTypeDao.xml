@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.dao.GoodsTypeDao">
+
+    <resultMap type="com.entity.GoodsTypeEntity" id="ResultMap">
+        <result property="id" column="id"/>
+        <result property="typeName" column="type_name"/>
+
+        <result property="createTime" column="create_time"/>
+        <result property="updateTime" column="update_time"/>
+        <result property="createBy" column="create_by"/>
+        <result property="updateBy" column="update_by"/>
+    </resultMap>
+
+    <select id="selectListView" resultMap="ResultMap">
+
+        SELECT  * FROM goods_type
+        <where> 1=1 ${ew.sqlSegment}</where>
+    </select>
+
+</mapper>

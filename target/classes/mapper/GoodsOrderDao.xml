@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.dao.GoodsOrderDao">
+
+    <resultMap type="com.entity.GoodsOrderEntity" id="ResultMap">
+        <result property="id" column="id"/>
+        <result property="orderNum" column="order_num"/>
+        <result property="yonghuId" column="yonghu_id"/>
+        <result property="goodsId" column="goods_id"/>
+        <result property="goodsNum" column="goods_num"/>
+        <result property="totalPrice" column="total_price"/>
+        <result property="goodsStatus" column="goods_status"/>
+        <result property="goodsAddr" column="goods_addr"/>
+
+        <result property="createTime" column="create_time"/>
+    </resultMap>
+
+    <resultMap type="com.entity.vo.GoodsOrderVo" id="OrderResultMap">
+        <result property="id" column="id"/>
+        <result property="orderNum" column="order_num"/>
+        <result property="yonghuId" column="yonghu_id"/>
+        <result property="goodsId" column="goods_id"/>
+        <result property="orderTime" column="order_time"/>
+        <result property="goodsNum" column="goods_num"/>
+        <result property="totalPrice" column="total_price"/>
+        <result property="orderId" column="order_id"/>
+        <result property="goodsStatus" column="goods_status"/>
+        <result property="goodsAddr" column="goods_addr"/>
+
+        <result property="createTime" column="create_time"/>
+    </resultMap>
+
+    <select id="selectListView" resultMap="ResultMap">
+
+        SELECT  * FROM goods_order
+        <where> 1=1 ${ew.sqlSegment}</where>
+    </select>
+
+    <select id="getGoodsOrderList" resultMap="OrderResultMap" parameterType="string">
+        select der.order_num, der.yonghu_id, der.goods_id, der.create_time as order_time, der.id order_id,der.total_price, der.goods_status,der.goods_addr  ,goods.*
+        from goods_order der, goods
+        where der.goods_id = goods.id and der.yonghu_id = #{yonghuId}
+    </select>
+
+</mapper>

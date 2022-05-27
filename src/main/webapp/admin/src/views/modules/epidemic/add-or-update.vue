@@ -532,6 +532,7 @@ export default {
         url: `yonghu/info/${id}`,
         method: "get",
       }).then(({ data }) => {
+        console.log(data);
         if (data && data.code === 0) {
           this.ruleForm = data.data;
           //解决前台上传图片后台不显示的问题

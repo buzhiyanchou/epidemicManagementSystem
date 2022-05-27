@@ -10,7 +10,233 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="68992403-76ee-45c9-83f7-52e2b571deb6" name="Changes" comment="统计数据疫情">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/interceptor/AuthorizationInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/interceptor/AuthorizationInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/doc/epidemic(2).sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/annotation/APPLoginUser.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/annotation/IgnoreAuth.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/annotation/LoginUser.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/config/AlipayConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/config/MyMetaObjectHandler.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/controller/AreaController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/controller/ChuruxinxiController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/controller/CommonController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/controller/ConfigController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/controller/EpidemicLogController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/controller/FileController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/controller/FloorController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/controller/ForeignPersonnelController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/controller/ForumController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/controller/GoodsAppointmentController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/controller/GoodsCartController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/controller/GoodsController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/controller/GoodsOrderController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/controller/GoodsTypeController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/controller/JiankangxinxiController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/controller/LocationInfoController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/controller/NewsController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/controller/RoomController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/controller/SuppliesController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/controller/SuppliesYonghuController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/controller/UserController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/controller/YiqingshangbaoController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/controller/YongHuAddrController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/controller/YonghuController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/controller/YtongjiController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/dao/AreaDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/dao/ChuruxinxiDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/dao/CommonDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/dao/ConfigDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/dao/EpidemicDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/dao/FloorDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/dao/ForeignPersonnelDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/dao/ForumDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/dao/GoodsAppointmentDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/dao/GoodsCartDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/dao/GoodsDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/dao/GoodsOrderDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/dao/GoodsTypeDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/dao/JiankangxinxiDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/dao/LocationInfoDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/dao/NewsDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/dao/RoomDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/dao/SuppliesDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/dao/SuppliesYonghuDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/dao/TokenDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/dao/UserDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/dao/YiqingshangbaoDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/dao/YongHuAddrDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/dao/YonghuDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/entity/AreaEntity.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/entity/BaseEntity.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/entity/ChuruxinxiEntity.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/entity/ConfigEntity.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/entity/EIException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/entity/EpidemicLog.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/entity/FloorEntity.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/entity/ForeignPersonnelEntity.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/entity/ForumEntity.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/entity/GoodsAppointmentAppEntity.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/entity/GoodsCartEntity.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/entity/GoodsEntity.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/entity/GoodsOrderEntity.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/entity/GoodsTypeEntity.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/entity/JiankangxinxiEntity.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/entity/LocationInfoEntity.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/entity/NewsEntity.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/entity/RoomEntity.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/entity/SuppliesEntity.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/entity/SuppliesUonghuEntity.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/entity/TokenEntity.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/entity/UserEntity.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/entity/YiqingshangbaoEntity.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/entity/YongHuAddrEntity.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/entity/YonghuEntity.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/entity/Ytongji.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/entity/model/ChuruxinxiModel.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/entity/model/ForumModel.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/entity/model/JiankangxinxiModel.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/entity/model/NewsModel.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/entity/model/YiqingshangbaoModel.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/entity/model/YonghuModel.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/entity/view/ChuruxinxiView.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/entity/view/ForumView.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/entity/view/JiankangxinxiView.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/entity/view/NewsView.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/entity/view/YiqingshangbaoView.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/entity/view/YonghuView.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/entity/vo/AppotinmentGoodsVo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/entity/vo/ChuruxinxiVO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/entity/vo/ForumVO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/entity/vo/GoodsCartVo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/entity/vo/GoodsOrderVo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/entity/vo/JiankangxinxiVO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/entity/vo/NewsVO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/entity/vo/SuppliesYonghuVo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/entity/vo/YiqingshangbaoVO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/entity/vo/YonghuVO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/interceptor/AuthorizationInterceptor.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/model/enums/TypeEnum.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/service/AreaService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/service/ChuruxinxiService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/service/CommonService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/service/ConfigService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/service/EpidemicService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/service/FloorService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/service/ForeignPersonnelService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/service/ForumService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/service/GoodsAppointmentService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/service/GoodsCartService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/service/GoodsOrderService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/service/GoodsService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/service/GoodsTypeService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/service/JiankangxinxiService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/service/LocationInfoService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/service/NewsService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/service/RoomService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/service/SuppliesService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/service/SuppliesYonghuService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/service/TokenService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/service/UserService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/service/YiqingshangbaoService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/service/YongHuAddrService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/service/YonghuService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/service/impl/AreaServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/service/impl/ChuruxinxiServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/service/impl/CommonServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/service/impl/ConfigServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/service/impl/EpidemicServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/service/impl/FloorServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/service/impl/ForeignPersonnelServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/service/impl/ForumServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/service/impl/GoodsAppointmentServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/service/impl/GoodsCartServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/service/impl/GoodsOrderServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/service/impl/GoodsServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/service/impl/GoodsTypeServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/service/impl/JiankangxinxiServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/service/impl/LocationInfoServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/service/impl/NewsServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/service/impl/RoomServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/service/impl/SuppliesServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/service/impl/SuppliesYonghuServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/service/impl/TokenServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/service/impl/UserServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/service/impl/YiqingshangbaoServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/service/impl/YongHuAddrServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/service/impl/YonghuServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/utils/BaiduUtil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/utils/CommonUtil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/utils/DateUtil$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/utils/DateUtil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/utils/FileUtil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/utils/HttpClientUtils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/utils/JQPageInfo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/utils/MD5Util.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/utils/MPUtil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/utils/PageUtils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/utils/Query.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/utils/R.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/utils/RiskAreaUtil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/utils/SHA256Util.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/utils/SQLFilter.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/utils/SpringContextUtils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/utils/ValidatorUtils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/config.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/doc/epidemic(2).sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/doc/epidemic.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/doc/sys_user.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mapper/AreaDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mapper/ChuruxinxiDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mapper/CommonDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mapper/ConfigDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mapper/EpidemicDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mapper/FloorDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mapper/ForeignPersonnelDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mapper/ForumDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mapper/Goods.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mapper/GoodsAppointment.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mapper/GoodsCartDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mapper/GoodsOrderDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mapper/GoodsTypeDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mapper/JiankangxinxiDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mapper/LocationInfoDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mapper/NewsDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mapper/RoomDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mapper/SuppliesYonghuDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mapper/TokenDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mapper/UserDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mapper/YiqingshangbaoDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mapper/YongHuAddr.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mapper/YonghuDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mapper/suppliesDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mybatis/mybatis-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/spring/spring-mvc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/spring/spring-mybatis.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/spring/spring.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/controller/EpidemicLogController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/controller/EpidemicLogController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/controller/YonghuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/controller/YonghuController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/doc/epidemic.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/doc/epidemic.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/node_modules/.cache/babel-loader/197dbfa97249c5af3c32de50f834f7fb.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/node_modules/.cache/babel-loader/197dbfa97249c5af3c32de50f834f7fb.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/node_modules/.cache/babel-loader/afd4db18b59f2eeb3b3c2bfe480d538e.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/node_modules/.cache/babel-loader/afd4db18b59f2eeb3b3c2bfe480d538e.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/node_modules/.cache/vue-loader/035e8ce779c797cbb4da1c06ab776d00.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/node_modules/.cache/vue-loader/035e8ce779c797cbb4da1c06ab776d00.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/node_modules/.cache/vue-loader/21a7a7a214541db3afbd32adcff956ee.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/node_modules/.cache/vue-loader/21a7a7a214541db3afbd32adcff956ee.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/node_modules/.cache/vue-loader/64e6467ae9fd6827b71973ec02cd72de.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/node_modules/.cache/vue-loader/64e6467ae9fd6827b71973ec02cd72de.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/node_modules/.cache/vue-loader/689ad7b818fa5f78df76fe8f5e1a6f24.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/node_modules/.cache/vue-loader/689ad7b818fa5f78df76fe8f5e1a6f24.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/node_modules/.cache/vue-loader/9ca14323f25c82cdc8b01a3ff20dc0d0.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/node_modules/.cache/vue-loader/9ca14323f25c82cdc8b01a3ff20dc0d0.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/node_modules/.cache/vue-loader/b22ae6773fd40d20ebf8b813c0e6bf14.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/node_modules/.cache/vue-loader/b22ae6773fd40d20ebf8b813c0e6bf14.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/node_modules/.cache/vue-loader/befa62b0fce9a56a44acec667daaa1c3.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/node_modules/.cache/vue-loader/befa62b0fce9a56a44acec667daaa1c3.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/node_modules/.cache/vue-loader/cc85c8c4129b014003a59f57d2ed300d.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/node_modules/.cache/vue-loader/cc85c8c4129b014003a59f57d2ed300d.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/node_modules/.cache/vue-loader/d20a0a62c247bec42b7be564fc0c08c7.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/node_modules/.cache/vue-loader/d20a0a62c247bec42b7be564fc0c08c7.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/node_modules/.cache/vue-loader/e4b18d4d4abcef02d25fc0f6d9023c27.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/node_modules/.cache/vue-loader/e4b18d4d4abcef02d25fc0f6d9023c27.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/node_modules/.cache/vue-loader/f29f9725d0688f184e3a3f404c497ad8.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/node_modules/.cache/vue-loader/f29f9725d0688f184e3a3f404c497ad8.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/node_modules/.cache/vue-loader/f42c9485625b08de79328849b16eb25b.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/node_modules/.cache/vue-loader/f42c9485625b08de79328849b16eb25b.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/src/views/modules/epidemic/add-or-update.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/src/views/modules/epidemic/add-or-update.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/src/views/modules/epidemic/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/src/views/modules/epidemic/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/src/views/modules/epidemic/list.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/src/views/modules/epidemic/list.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,6 +275,14 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="E:\develop\maven\repository" />
+        <option name="userSettingsFile" value="C:\Users\31186\.m2\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="2" />
   </component>
@@ -77,10 +311,10 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -88,18 +322,92 @@
       <recent name="com.service.impl" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration default="true" type="com.poratu.idea.plugins.tomcat" factoryName="SMART_TOMCAT_FACTORY">
-      <option name="adminPort" value="8005" />
-      <option name="contextPath" />
-      <option name="docBase" />
-      <option name="envOptions" />
-      <option name="passParentEnvironmentVariables" value="true" />
-      <option name="port" value="8080" />
-      <option name="tomcatInfo" />
-      <option name="vmOptions" />
+  <component name="RunManager" selected="Smart Tomcat.Unnamed">
+    <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.311" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="epidemicManagementSystem02:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/epidemicManagementSystem02_war_exploded" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="71ea805c-ad8a-4c41-8ce5-c705dec946f9" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="57685" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Profile">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
       <method v="2">
         <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="epidemicManagementSystem02:war exploded" />
+        </option>
       </method>
     </configuration>
     <configuration name="Tomcat 8.5.311" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.311" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
@@ -189,93 +497,44 @@
         </option>
       </method>
     </configuration>
-    <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.311" ALTERNATIVE_JRE_ENABLED="false">
-      <option name="UPDATING_POLICY" value="restart-server" />
-      <deployment>
-        <artifact name="epidemicManagementSystem02:war exploded">
-          <settings>
-            <option name="CONTEXT_PATH" value="/epidemicManagementSystem02_war_exploded" />
-          </settings>
-        </artifact>
-      </deployment>
-      <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="71ea805c-ad8a-4c41-8ce5-c705dec946f9" />
-      </server-settings>
-      <predefined_log_file enabled="true" id="Tomcat" />
-      <predefined_log_file enabled="true" id="Tomcat Catalina" />
-      <predefined_log_file id="Tomcat Manager" />
-      <predefined_log_file id="Tomcat Host Manager" />
-      <predefined_log_file id="Tomcat Localhost Access" />
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="57685" />
-      </RunnerSettings>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Profile">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
+    <configuration name="Unnamed" type="com.poratu.idea.plugins.tomcat" factoryName="SMART_TOMCAT_FACTORY" nameIsGenerated="true">
+      <option name="adminPort" value="8005" />
+      <option name="contextPath" value="/" />
+      <option name="docBase" value="$PROJECT_DIR$/src/main/webapp" />
+      <option name="envOptions">
+        <map />
+      </option>
+      <option name="passParentEnvironmentVariables" value="true" />
+      <option name="port" value="8080" />
+      <option name="tomcatInfo">
+        <TomcatInfo>
+          <option name="name" value="Apache Tomcat/9.0.63" />
+          <option name="number" value="0" />
+          <option name="path" value="E:\tomcat\apache-tomcat-9.0.63" />
+          <option name="version" value="9.0.63.0" />
+        </TomcatInfo>
+      </option>
+      <option name="vmOptions" value="" />
       <method v="2">
         <option name="Make" enabled="true" />
-        <option name="BuildArtifacts" enabled="true">
-          <artifact name="epidemicManagementSystem02:war exploded" />
-        </option>
       </method>
     </configuration>
+    <configuration default="true" type="com.poratu.idea.plugins.tomcat" factoryName="SMART_TOMCAT_FACTORY">
+      <option name="adminPort" value="8005" />
+      <option name="contextPath" />
+      <option name="docBase" />
+      <option name="envOptions" />
+      <option name="passParentEnvironmentVariables" value="true" />
+      <option name="port" value="8080" />
+      <option name="tomcatInfo" />
+      <option name="vmOptions" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Smart Tomcat.Unnamed" />
+    </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -318,7 +577,6 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />

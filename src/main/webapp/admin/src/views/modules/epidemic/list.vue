@@ -121,60 +121,60 @@
           <el-table-column
             :sortable="contents.tableSortable"
             :align="contents.tableAlign"
-            prop="name"
+            prop="yonghuming"
             :header-align="contents.tableAlign"
             label="姓名"
           >
             <template slot-scope="scope">
-              {{ scope.row.name }}
+              {{ scope.row.yonghuming }}
             </template>
           </el-table-column>
          
           <el-table-column
             :sortable="contents.tableSortable"
             :align="contents.tableAlign"
-            prop="time1"
-            :header-align="contents.tableAlign"
+            prop="qzTime"
+            :header-align="contents.qzTime"
             label="确诊时间"
           >
             <template slot-scope="scope">
-              {{ scope.row.time1 }}
+              {{ scope.row.qzTime }}
             </template>
           </el-table-column>
           <el-table-column
             :sortable="contents.tableSortable"
             :align="contents.tableAlign"
-            prop="time2"
-            :header-align="contents.time2"
+            prop="wzzTime"
+            :header-align="contents.wzzTime"
             label="确诊无症状感染者时间"
           >
             <template slot-scope="scope">
               <!-- {{ scope.row.zhuzhi }} -->
-              {{scope.row.time2}}
+              {{scope.row.wzzTime}}
             </template>
           </el-table-column>
           <el-table-column
             :sortable="contents.tableSortable"
             :align="contents.tableAlign"
-            prop="time3"
+            prop="glTime"
             :header-align="contents.tableAlign"
             label="隔离时间"
           >
             <template slot-scope="scope">
               <!-- {{ scope.row.zhuzhi }} -->
-              {{scope.row.time3}}
+              {{scope.row.glTime}}
             </template>
           </el-table-column>
           <el-table-column
             :sortable="contents.tableSortable"
             :align="contents.tableAlign"
-            prop="time4"
+            prop="zyTime"
             :header-align="contents.tableAlign"
             label="治愈时间"
           >
             <template slot-scope="scope">
               <!-- {{ scope.row.zhuzhi }} -->
-              {{scope.row.time4}}
+              {{scope.row.zyTime}}
             </template>
           </el-table-column>
            <el-table-column
@@ -249,8 +249,8 @@ export default {
         {
           id: 1,
           name: "张三",
-          time1: "2019-01-01",
-          time2: "",
+          qzTime: "2019-01-01",
+          wzzTime: "",
           time3: "2019-05-03",
           time4: "2019-10-01",
           remark : "这是备注",
@@ -411,7 +411,7 @@ export default {
   },
   created() {
     this.init();
-    // this.getDataList();
+    this.getDataList();
     this.contentStyleChange();
   },
   mounted() {},
@@ -627,29 +627,18 @@ export default {
       this.dataListLoading = true;
       let params = {
         page: this.pageIndex,
-        limit: this.pageSize,
-        sort: "id",
+        size: this.pageSize,
+        // sort: "id",
       };
-      if (
-        this.searchForm.yonghuming != "" &&
-        this.searchForm.yonghuming != undefined
-      ) {
-        params["yonghuming"] = "%" + this.searchForm.yonghuming + "%";
-      }
-      if (
-        this.searchForm.xingming != "" &&
-        this.searchForm.xingming != undefined
-      ) {
-        params["xingming"] = "%" + this.searchForm.xingming + "%";
-      }
+      
       this.$http({
-        url: "yonghu/page",
+        url: "epidemic/page",
         method: "get",
         params: params,
       }).then(({ data }) => {
         console.log(data)
         if (data && data.code === 0) {
-          this.dataList = data.data.list;
+          this.dataList = data.data
           this.totalPage = data.data.total;
         } else {
           this.dataList = [];

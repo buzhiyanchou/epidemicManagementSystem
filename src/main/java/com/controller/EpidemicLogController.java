@@ -59,6 +59,17 @@ public class EpidemicLogController {
     }
 
     /**
+     * 后端列表
+     */
+    @RequestMapping("/page1")
+    public R page(@RequestParam Map<String, Object> params,YonghuEntity yonghu,
+                  HttpServletRequest request){
+
+        EntityWrapper<YonghuEntity> ew = new EntityWrapper<YonghuEntity>();
+        PageUtils page = yonghuService.queryPage(params, MPUtil.sort(MPUtil.between(MPUtil.likeOrEq(ew, yonghu), params), params));
+        return R.ok().put("data", page);
+    }
+    /**
      * 修改
      */
     @RequestMapping("/update")

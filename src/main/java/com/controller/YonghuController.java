@@ -205,6 +205,8 @@ public class YonghuController {
 		}
 
 		// yonghu.setId(new Date().getTime());
+		yonghu.setStatus(0);
+		yonghu.setBack_status(0);
         yonghuService.insert(yonghu);
         return R.ok().put("data", yonghu);
     }
