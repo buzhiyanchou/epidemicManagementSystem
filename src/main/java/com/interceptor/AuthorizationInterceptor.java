@@ -71,18 +71,17 @@ public class AuthorizationInterceptor implements HandlerInterceptor {
         	return true;
         }
         
-//		PrintWriter writer = null;
-//		response.setCharacterEncoding("UTF-8");
-//		response.setContentType("application/json; charset=utf-8");
-//		try {
-//		    writer = response.getWriter();
-//		    writer.print(JSONObject.toJSONString(R.error(401, "请先登录")));
-//		} finally {
-//		    if(writer != null){
-//		        writer.close();
-//		    }
-//		}
-//				throw new EIException("请先登录", 401);
-		return true;
+		PrintWriter writer = null;
+		response.setCharacterEncoding("UTF-8");
+		response.setContentType("application/json; charset=utf-8");
+		try {
+		    writer = response.getWriter();
+		    writer.print(JSONObject.toJSONString(R.error(401, "请先登录")));
+		} finally {
+		    if(writer != null){
+		        writer.close();
+		    }
+		}
+				throw new EIException("请先登录", 401);
     }
 }

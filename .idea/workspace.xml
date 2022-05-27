@@ -9,24 +9,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="68992403-76ee-45c9-83f7-52e2b571deb6" name="Changes" comment="Changes">
-      <change afterPath="$PROJECT_DIR$/.idea/MyBatisCodeHelperDatasource.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/controller/YtongjiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/controller/YtongjiController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dao/EpidemicDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dao/EpidemicDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/entity/EpidemicLog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/entity/EpidemicLog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/entity/Ytongji.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/entity/Ytongji.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/entity/vo/YonghuVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/entity/vo/YonghuVO.java" afterDir="false" />
+    <list default="true" id="68992403-76ee-45c9-83f7-52e2b571deb6" name="Changes" comment="统计数据疫情">
       <change beforePath="$PROJECT_DIR$/src/main/java/com/interceptor/AuthorizationInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/interceptor/AuthorizationInterceptor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/service/EpidemicService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/service/EpidemicService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/service/impl/EpidemicServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/service/impl/EpidemicServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/utils/DateUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/utils/DateUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/log4j.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/EpidemicDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/EpidemicDao.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/front_old/unpackage/dist/build/mp-weixin/pages/yiqingshangbao/list.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/front_old/unpackage/dist/build/mp-weixin/pages/yiqingshangbao/list.wxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +62,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
-    <property name="MyBatisLogPluginindexNum" value="134" />
+    <property name="MyBatisLogPluginindexNum" value="142" />
     <property name="OverrideImplement.combined" value="false" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
@@ -88,8 +72,11 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="E:/tomcat/apache-tomcat-9.0.63" />
     <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -299,7 +286,7 @@
       <option name="presentableId" value="Default" />
       <updated>1653224379673</updated>
       <workItem from="1653638520633" duration="13527000" />
-      <workItem from="1653652404288" duration="2184000" />
+      <workItem from="1653652404288" duration="2500000" />
     </task>
     <task id="LOCAL-00001" summary="[jiekou]zhuming">
       <created>1653340471429</created>
@@ -308,7 +295,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653340471429</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="统计数据疫情">
+      <created>1653654737975</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1653654737975</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -329,7 +323,8 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="[jiekou]zhuming" />
-    <option name="LAST_COMMIT_MESSAGE" value="[jiekou]zhuming" />
+    <MESSAGE value="统计数据疫情" />
+    <option name="LAST_COMMIT_MESSAGE" value="统计数据疫情" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
