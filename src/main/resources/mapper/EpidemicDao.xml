@@ -27,4 +27,11 @@
             e.user_id = y.id
     </select>
 
+    <select id="selectListView"
+            resultType="com.entity.vo.EpidemicLogVo" >
+
+        SELECT  epidemiclog.* FROM epidemiclog  epidemiclog
+        <where> 1=1 ${ew.sqlSegment}</where>
+    </select>
+
 </mapper>

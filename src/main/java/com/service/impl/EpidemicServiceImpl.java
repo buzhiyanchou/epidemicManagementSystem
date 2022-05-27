@@ -4,6 +4,7 @@ package com.service.impl;
 import com.baomidou.mybatisplus.mapper.EntityWrapper;
 import com.baomidou.mybatisplus.mapper.Wrapper;
 import com.baomidou.mybatisplus.plugins.Page;
+import com.entity.view.YonghuView;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import com.baomidou.mybatisplus.service.impl.ServiceImpl;
@@ -74,5 +75,10 @@ public class EpidemicServiceImpl extends ServiceImpl<EpidemicDao, EpidemicLog> i
 
 
         return voList;
+    }
+
+    @Override
+    public List<EpidemicLog> selectListView(Wrapper<EpidemicLog> wrapper) {
+        return baseMapper.selectListView(wrapper);
     }
 }

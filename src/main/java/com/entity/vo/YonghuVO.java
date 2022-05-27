@@ -34,7 +34,7 @@ public class YonghuVO  implements Serializable {
 	 * id
 	 */
 
-	private Integer id;
+	private Long id;
 	/**
 	 * 姓名
 	 */
